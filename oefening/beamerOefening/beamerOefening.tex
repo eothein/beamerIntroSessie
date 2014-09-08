@@ -1,0 +1,286 @@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+%\setbeameroption{show notes}
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{listings, color}
+\usepackage{lstautogobble}
+\usepackage[dutch,english]{babel}
+\usepackage{color}
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\newif\ifanswers
+%\answerstrue
+
+\graphicspath{ {./images/} }
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Korte titel]{Lange Titel} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Uw naam} % Your name
+\institute[HoGent - neem ik aan] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Hogeschool Gent \\ % Your institution for the title page
+\medskip
+\textit{email adres} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,                    % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,                       % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+
+
+% OPGAVE 1
+% Het maken een overzichtsframe
+%
+
+\section{Opgave 1}
+
+\begin{frame}
+	\frametitle{Overview}
+	\tableofcontents[part=0,pausesections]
+\end{frame}
+
+\section{Opgave 2}
+%OPGAVE 2
+% Maken van een overzichtslide
+\begin{frame}
+	\frametitle{Hello World}
+		Dit is een test slide
+\end{frame}
+
+\section{Opgave 3}
+%OPGAVE 3
+% Maak wat tekst en probeer verschillende stijlen toe te passen. Bold, italic, alert tekst, 
+\begin{frame}
+	\frametitle{Tekstopmaa}
+	Dit is een \textbf{dikke tekst} en dit is \textit{italic} en dit is \alert{een alert tekst.}
+\end{frame}
+
+\section{Opgave 4}
+% OPGAVE 4
+% invoegen van java code
+% Tip: http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+\begin{frame}[fragile]
+	\frametitle{Java code}
+	\begin{lstlisting}[language=java, ]
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.to_do_list, menu);
+        return true;
+    }
+	\end{lstlisting}
+\end{frame}
+
+\section{Opgave 5}
+%OPGAVE 5
+% Conditioneel builden: afhankelijk van een variabele pas je de inhoud van de slide aan
+\begin{frame}
+	\frametitle{Condtioneel}
+		Dit is standaard op de slide
+	\ifanswers
+		Dit is enkel als answers op true staat
+	\fi
+\end{frame}
+
+\section{Opgave 6}
+%Opgave 6
+% Invoegen van figuur centraal, 60 % van breedte
+\begin{frame}
+	\frametitle{Figuur 1}
+	
+	\begin{figure}
+		\centering
+			\includegraphics[width=0.6\textwidth]{figure.jpg}
+		\caption{Dit is een figuur}
+		\label{fig:figure}
+	\end{figure}
+	
+\end{frame}
+
+\section{Opgave 7}
+%OPGAVE 7
+%Figuur die ganse breedte inneemt
+\begin{frame}[plain]
+	
+	\begin{figure}
+		\centering
+			\includegraphics[width=1.00\textwidth]{baby.jpg}
+		\label{fig:baby}
+	\end{figure}
+	
+\end{frame}
+
+\section{Opgave 8}
+%Opgave 8 
+% Maak een genummerde lijst van volgende zaken. Zorg ervoor dat de teskt gradueel komt (tip: pause) TITEL: Things you'll never 	hear a man say, 1. "Does this hunter outfit make me look fat?" 2. "My wife never listens to me" 3. "I'll have a light salad without dressing and a diet cola" 5. "Looks like it is time to buy some new underwear"
+
+\begin{frame}
+	\frametitle{Things you'll never 	hear a man say}
+	
+	\begin{enumerate}
+		\item ``Does this hunter outfit make me look fat?'' \pause
+		\item ``My wife never listens to me'' \pause
+		\item ``I'll have a light salad without dressing and a diet cola'' \pause
+		\item ``Looks like it is time to buy some new underwear'' \pause
+	\end{enumerate}
+\end{frame} 
+
+
+\section{Opgave 9}
+%Opgave 9
+% maak een slide bestaande uit twee kolommen waar in de eerste kolom voordelen van lachen staan, in de tweede kolom enkele nadelen
+% Tip: http://tex.stackexchange.com/questions/32931/multiple-columns-with-images-and-wrapped-text-in-beamer.
+
+\begin{frame}
+  \frametitle{This is a frame title}
+  \begin{columns}[onlytextwidth]
+    \begin{column}{0.5\textwidth}
+      \centering
+			\textbf{Voordelen van lachen}
+					
+					\begin{enumerate}
+						\item Laughter causes deep muscle relaxation
+						\item Laughter reduces stress
+						\item Laughter has health benefits. 
+						\item Laughter is a universal language.
+						\item Laughter promotes communication.
+					\end{enumerate}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+		\textbf{Nadelen van lachen}
+      \centering
+					\begin{enumerate}
+						\item Peeing your pants 
+						\item Dislocated jaw
+						\item Headaches
+						\item Emphysema
+						\item Inhalation of foreign bodies (e.g. gum drops, popcorn, peppermint bark)
+					\end{enumerate}
+    \end{column}
+​  \end{columns}
+\end{frame}
+
+\end{document} 
